@@ -36,22 +36,42 @@ const displayNumber = (num) => {
 displayNumber(a)
 console.log("After assigning new values to a")
 console.log(a)
-
+console.log("=========================================================")
 /**
  * ^Some more advance concept
  */
+/* 
+ & The above code will throw error, even though bar() is being called inside the function foo(). 
+ & Because the compiler will treat this two function as two separate function and variable z is the local
+ & the function foo. But trying to print the value in the function bar 
+*/
 
-const foo = () => {
-    let z = 10;
-    bar()
+// const foo = () => {
+//     let z = 10
+//     bar()
+// }
+
+// const bar = () => {
+//     console.log(z)
+// }
+
+// foo()
+
+console.log("=========================================================")
+/*
+& Now lets try to fix the above program
+todo IMPORTANT To execute the below program make sure you comment out the above program
+^ Now if you try to run this script file it will throw error because JavaScript terminates once it finds error
+! The above code is commented purposefuly, if one needs to understand they can uncomment and try
+*/
+const foo1 = () =>{
+    let z = 77
+    bar1 = () =>  {
+        console.log(z)
+    }
+    bar1()
 }
 
-const bar = () => {
-    console.log(z);
-}
+foo1()
 
-foo()
 
-//The above code will throw error, even though bar() is being called inside the function foo(). 
-//Because the compiler will treat this two function as two separate function and variable z is the local
-//to the function foo. But trying to print the value in the function bar
