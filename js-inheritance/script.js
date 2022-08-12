@@ -27,6 +27,7 @@ console.log("=========================================================")
  * Let's understand the same above example using Inheritance
  & Now using Inheritance we able to negate the redundancy
  & Now What If we need to fix the bug in the function
+ ! All together the above complete concept is class based Inheritance. 
 */
 
 class Person{
@@ -54,6 +55,5 @@ console.log(you1.talk())
 
 
 /* 
-! All together the above complete concept is class based Inheritance. 
-! It is not the exact the way we have seen it in other
+
 */
